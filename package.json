@@ -30,6 +30,7 @@
     "passport": "^0.5.2",
     "passport-google-oauth20": "^2.0.0",
     "pg": "^8.7.3",
+    "randomstring": "^1.2.2",
     "sequelize": "^6.17.0",
     "sequelize-cli": "^6.4.1"
   },
