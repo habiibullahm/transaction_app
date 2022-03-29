@@ -2,13 +2,13 @@ const express = require("express");
 const router = express.Router();
 
 const {
-    register,
-    login,
-    forgotPassword,
-    resetPassword,
-    changePassword,
-    loginGoogle,
-  } = require("../controllers/userController");
+  register,
+  login,
+  forgotPassword,
+  resetPassword,
+  changePassword,
+  loginGoogle,
+} = require("../controllers/userController");
 const {
   registerSchema,
   loginSchema,

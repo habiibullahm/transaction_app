@@ -16,6 +16,6 @@ passport.use(
         defaults: { fullName: profile.displayName },
       });
       cb(null, user);
-    },
-  ),
+    }
+  )
 );
