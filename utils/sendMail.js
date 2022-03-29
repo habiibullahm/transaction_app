@@ -12,7 +12,7 @@ module.exports = async (email, subject, content) => {
     },
   });
   let info = await transporter.sendMail({
-    from: '"Lektur App" <no-reply@lektur.com>',
+    from: '"Transaction App" <no-reply@transaction.com>',
     to: email,
     subject: subject,
     text: "",

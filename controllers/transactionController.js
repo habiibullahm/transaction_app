@@ -78,11 +78,11 @@ module.exports = {
     }
   },
   getTransaction: async (req, res) => {
-    const { id } = req.params;
+    const { transactionId } = req.query;
     try {
       const transaction = await Transaction.findOne({
         where: {
-          id,
+          id : transactionId,
         },
         include: [
           {
@@ -96,7 +96,7 @@ module.exports = {
         },
       });
 
-      if (transaction.length == 0) {
+      if (!transaction) {
         return res.status(404).json({
           status: "Not Found",
           message: "The data is empty",
