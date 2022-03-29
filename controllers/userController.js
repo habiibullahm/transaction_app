@@ -37,17 +37,17 @@ module.exports = {
           process.env.SECRET_TOKEN,
           { expiresIn: "24h" }
         );
-        //   sendMail(
-        //     email,
-        //     "Register Successfully",
-        //     `
-        //     <h1> Wellcome To Lektur </h1>
-        //     <p> hi student </p>
-        //     <p> click link below to login </p>
-        //     <a href="https://lektur-app-glints16.herokuapp.com/login">Login</a>
-        //     <p> Thank you for being a part of lektur </p>
-        //     `,
-        //   );
+          sendMail(
+            email,
+            "Register Successfully",
+            `
+            <h1> Wellcome To Transaction App </h1>
+            <p> hi costumer </p>
+            <p> click link below to login </p>
+            <a href="http://localhost:5000/login">Login</a>
+            <p> Thank you for being a part of team </p>
+            `,
+          );
         res.status(201).json({
           status: "Success",
           message: "Successfully to create a costumer account",
@@ -90,17 +90,17 @@ module.exports = {
           process.env.SECRET_TOKEN,
           { expiresIn: "24h" }
         );
-        //   sendMail(
-        //     email,
-        //     "Register Successfully",
-        //     `
-        //     <h1> Wellcome To Lektur </h1>
-        //     <p> hi teacher </p>
-        //     <p> click link below to login </p>
-        //     <a href="https://lektur-app-glints16.herokuapp.com/login">Login</a>
-        //     <p> Thank you for being a part of lektur </p>
-        //     `,
-        //   );
+          sendMail(
+            email,
+            "Register Successfully",
+            `
+            <h1> Wellcome To Transation App </h1>
+            <p> hi admin </p>
+            <p> click link below to login </p>
+            <a href="http://localhost:5000/login">Login</a>
+            <p> Thank you for being a part of team </p>
+            `,
+          );
         res.status(201).json({
           status: "Success",
           message: "Successfully to create an admin account",
