@@ -9,7 +9,7 @@ module.exports = {
     register: async (req, res) => {
       const { username, email, password, role} = req.body;
       try {
-        if (role == "guest") {
+        if (role == "costumer") {
           const check = await User.findOne({
             where: {
               email,
@@ -50,7 +50,7 @@ module.exports = {
         //   );
           res.status(201).json({
             status: "Success",
-            message: "Successfully to create a guest account",
+            message: "Successfully to create a costumer account",
             result: {
               token,
               user: {
@@ -118,7 +118,7 @@ module.exports = {
         } else {
           return res.status(400).json({
             status: "Bad Request",
-            message: "role only guest and admin",
+            message: "role only for costumer and admin",
             result: {},
           });
         }

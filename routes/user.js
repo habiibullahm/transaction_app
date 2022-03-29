@@ -15,7 +15,7 @@ const {
   resetPasswordSchema,
 } = require("../helpers/joi-schema");
 const { validate } = require("../middlewares/validator");
-const { isLogin } = require("../middlewares/auth");
+const { isLogin, isAdmin } = require("../middlewares/auth");
 
 const passport = require("passport");
 require("../helpers/passport");
