@@ -1,7 +1,7 @@
 
 ## Transaction App
 
-Simple app where admin can do CRUD Transaction. 
+An app to do Transaction. 
 
 First, User can register and login as admin or costumer. only admin can do CRUD transaction. than admin can create an transaction and costumer can only get all transaction details.
 
